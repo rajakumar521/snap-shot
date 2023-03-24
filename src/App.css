@@ -1,0 +1,26 @@
+.snap{
+  width: 40%;
+  margin: 0 auto;
+}
+.image-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.flickr-image:hover{
+  transform: scale(1.2);
+  cursor: pointer;
+}
+.head{
+  color: rgb(11, 11, 30);
+}
+.btn{
+  margin: 10px 0;
+}
+.btn button:first-child{
+  margin: 0;
+}
+.btn button{
+  margin: 0 10px;
+}
