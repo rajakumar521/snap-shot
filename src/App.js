@@ -26,7 +26,7 @@ function App() {
     axios.get(url).then((resp) => {
       console.log(resp.data)
       const arr = resp.data.photos.photo.map((imgData) => {
-        return fetchFlickrImageUrl(imgData, 'q')
+        return fetchFlickrImageUrl(imgData, 'q');
       });
       setImageData(arr);
 
@@ -50,7 +50,7 @@ function App() {
     <>
       <div className='snap'>
         <h1 className='head'>Snap Shot</h1>
-        <input onChange={(e) => { searchData.current = e.target.value }} value={searchData.current ? searchData.current : ""} placeholder="search" />
+        <input type='text' onChange={(e) => { searchData.current = e.target.value }} placeholder="search" />
         <button onClick={() => { setSearchText(searchData.current) }}>Search</button>
         <section className='btn'>
           <button onClick={() => { setSearchText("mountains") }}>mountains</button>
